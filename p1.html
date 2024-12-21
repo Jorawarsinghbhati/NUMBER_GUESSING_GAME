@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 60%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+
+        .form input[type="number"] {
+            width: 200px;
+        }
+
+        .lastResult {
+            color: white;
+            padding: 3px;
+        }
+        body{
+            background-color: rgb(189, 223, 223);
+            text-shadow: gold;
+        }
+        .div{
+            background-color: #f2f2f2;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0);
+        }
+    </style>
+   <script src="p1.js" defer></script>
+</head>
+
+<body>
+    <div class="div">
+    <h1>Number Guessing Game</h1>
+    <div class="para">
+        <p>We have selected a random number between 1 and 100. See if you can guess it in 5 turns or fewer. We'll tell
+            you if your guess was too high or too low.</p>
+    </div>
+    <div class="guess">
+        <label for="2023">Enter a guess:</label>
+        <input type="number" name="input" id="2023" class="in">
+        <button type="button" id="2024" class="but">Submit Guess</button>
+    </div>
+
+    <div class="nichhe">
+        <p class="guesses"></p>
+        <p class="last_result"></p>
+        <p class="loworhi"></p>
+    </div>
+
+</body>
+
+</html>
